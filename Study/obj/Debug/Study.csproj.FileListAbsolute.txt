@@ -1,0 +1,7 @@
+C:\Users\151\Desktop\Skillbox\MyLearning\Study\bin\Debug\Study.exe.config
+C:\Users\151\Desktop\Skillbox\MyLearning\Study\bin\Debug\Study.exe
+C:\Users\151\Desktop\Skillbox\MyLearning\Study\bin\Debug\Study.pdb
+C:\Users\151\Desktop\Skillbox\MyLearning\Study\obj\Debug\Study.csproj.AssemblyReference.cache
+C:\Users\151\Desktop\Skillbox\MyLearning\Study\obj\Debug\Study.csproj.CoreCompileInputs.cache
+C:\Users\151\Desktop\Skillbox\MyLearning\Study\obj\Debug\Study.exe
+C:\Users\151\Desktop\Skillbox\MyLearning\Study\obj\Debug\Study.pdb
