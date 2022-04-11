@@ -6,13 +6,8 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            string firstName = "Ander";
-            string surName = "Shatohin";
-            string age = "38";
-            string specialization = "Intern";
-
-            Console.WriteLine($"{firstName,10} {surName,15}");
-            Console.WriteLine($"{age,10} {specialization,15}");
+            double d = 10.2456524;
+            Console.WriteLine(d.ToString("#.###"));
 
             Console.ReadLine();
         }
