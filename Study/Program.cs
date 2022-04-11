@@ -6,9 +6,9 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            double a = 1.256;
-            int b = (int)a;
-
+            string name = "Ander";
+            int a = Convert.ToInt32(name);
+            Console.WriteLine(a);
             Console.ReadLine();
         }
     }
