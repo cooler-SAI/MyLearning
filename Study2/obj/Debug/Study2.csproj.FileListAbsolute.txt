@@ -1,0 +1,6 @@
+C:\Users\151\Desktop\Skillbox\MyLearning\Study2\bin\Debug\Study2.exe.config
+C:\Users\151\Desktop\Skillbox\MyLearning\Study2\bin\Debug\Study2.exe
+C:\Users\151\Desktop\Skillbox\MyLearning\Study2\bin\Debug\Study2.pdb
+C:\Users\151\Desktop\Skillbox\MyLearning\Study2\obj\Debug\Study2.csproj.CoreCompileInputs.cache
+C:\Users\151\Desktop\Skillbox\MyLearning\Study2\obj\Debug\Study2.exe
+C:\Users\151\Desktop\Skillbox\MyLearning\Study2\obj\Debug\Study2.pdb
