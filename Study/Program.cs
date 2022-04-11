@@ -11,12 +11,8 @@ namespace Study
             string age = "38";
             string specialization = "Intern";
 
-            string pattern = "Name: {0}, \nSurname: {1}, \nAge: {2}, \nSpecialization: {3}";
-            Console.WriteLine(pattern,
-                              firstName,
-                              surName,
-                              age,
-                              specialization);
+            Console.WriteLine($"{firstName,10} {surName,15}");
+            Console.WriteLine($"{age,10} {specialization,15}");
 
             Console.ReadLine();
         }
