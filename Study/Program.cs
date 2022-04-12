@@ -20,12 +20,16 @@ namespace Study
                 Console.WriteLine($"MaxValue is : {firstNumber}");
                 Console.WriteLine($"MinValue is : {secondNumber}");
             }
-            else
+            else if (firstNumber < secondNumber)
             {                
                 Console.WriteLine($"MaxValue is : {secondNumber}");
                 Console.WriteLine($"MinValue is : {firstNumber}");
             }
-
+            else
+            {
+                Console.WriteLine($"MaxValue is : {secondNumber}");
+                Console.WriteLine($"MinValue is : {firstNumber}");
+            }
 
             Console.ReadLine();
         }
