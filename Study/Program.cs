@@ -8,7 +8,9 @@ namespace Study
         {
             Random randomize = new Random();
 
-            int randomNumber = randomize.Next(100);
+            
+
+            int randomNumber = randomize.Next(50,100);
             Console.WriteLine(randomNumber);
         }
     }
