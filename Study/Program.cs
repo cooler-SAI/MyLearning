@@ -6,16 +6,19 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            int x = 5;
+            Random rand = new Random();
 
-            if (x >= 5)
+            int OutsideTemp = rand.Next(-10, 20);
+            if (OutsideTemp <= 0)
             {
-                Console.WriteLine("x >= 5");
+                Console.WriteLine("Cold outside! get a warm clothes");
             }
             else
             {
-                Console.WriteLine("x != 5");
+                Console.WriteLine("It's hot! Get Lightweight clothing");
             }
+
+            Console.ReadLine();
         }
     }
 }
