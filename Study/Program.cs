@@ -6,12 +6,7 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            Random randomize = new Random();
-
             
-
-            int randomNumber = randomize.Next(50,100);
-            Console.WriteLine(randomNumber);
         }
     }
 }
