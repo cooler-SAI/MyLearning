@@ -6,7 +6,7 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            
+            Random randomize = new Random();
         }
     }
 }
