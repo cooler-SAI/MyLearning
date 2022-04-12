@@ -4,3 +4,4 @@ C:\Users\151\Desktop\Skillbox\MyLearning\Study\obj\Debug\Study.csproj.CoreCompil
 C:\Users\151\Desktop\Skillbox\MyLearning\Study\obj\Debug\Study.exe
 C:\Users\151\Desktop\Skillbox\MyLearning\Study\obj\Debug\Study.pdb
 C:\Users\151\Desktop\Skillbox\MyLearning\Study\bin\Debug\Study.pdb
+C:\Users\151\Desktop\Skillbox\MyLearning\Study\obj\Debug\Study.csproj.AssemblyReference.cache
