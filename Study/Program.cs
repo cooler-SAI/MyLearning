@@ -6,11 +6,16 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            Random randomize = new Random();
+            int x = 5;
 
-            int x = randomize.Next(10, 20);
-
-            Console.WriteLine(x);
+            if (x >= 5)
+            {
+                Console.WriteLine("x >= 5");
+            }
+            else
+            {
+                Console.WriteLine("x != 5");
+            }
         }
     }
 }
