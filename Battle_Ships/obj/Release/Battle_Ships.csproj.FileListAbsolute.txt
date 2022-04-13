@@ -1,0 +1,7 @@
+C:\Users\Авто Япония 2\Desktop\Game\Battle_Ships\bin\Release\Battle_Ships.exe.config
+C:\Users\Авто Япония 2\Desktop\Game\Battle_Ships\bin\Release\Battle_Ships.exe
+C:\Users\Авто Япония 2\Desktop\Game\Battle_Ships\bin\Release\Battle_Ships.pdb
+C:\Users\Авто Япония 2\Desktop\Game\Battle_Ships\obj\Release\Battle_Ships.csproj.SuggestedBindingRedirects.cache
+C:\Users\Авто Япония 2\Desktop\Game\Battle_Ships\obj\Release\Battle_Ships.csproj.CoreCompileInputs.cache
+C:\Users\Авто Япония 2\Desktop\Game\Battle_Ships\obj\Release\Battle_Ships.exe
+C:\Users\Авто Япония 2\Desktop\Game\Battle_Ships\obj\Release\Battle_Ships.pdb

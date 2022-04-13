@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e2df672b-ea09-4583-9551-0f5478a94e6f": {
+      "ProjectGuid": "e2df672b-ea09-4583-9551-0f5478a94e6f",
+      "DisplayName": "Battle_Ships",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
