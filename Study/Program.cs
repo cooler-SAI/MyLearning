@@ -8,10 +8,10 @@ namespace Study
         {
             
 
-            for (int i = 0; i <= 15;)
+            for (int i = 10; i <= 10 && i >= 0; --i)
             {
                 Console.WriteLine(i);
-                i++;
+                
             }
 
             Console.ReadLine();
