@@ -19,7 +19,7 @@ namespace Battle_Ships
             Console.WriteLine("RULES:" +
                 "\n * Enter coordinates for defeat 5 Battle Ships" +
                 "\n * You need to Enter A1 and B1 for use a bomb" +
-                "\n * Our capitan sad you need to use A1 <=5 and B1<=5" +
+                "\n * Our capitan said you need to use A1 <=5 and B1<=5" +
                 "\n * Simple word: use numbers from 1 to 5 if you wanna get a ship!");
             Console.WriteLine("");
             Console.WriteLine("Press any key to continue...START THE GAME!");
