@@ -1,0 +1,7 @@
+C:\Users\151\Desktop\Skillbox\MyLearning\Projects\What's_the_Number\bin\Debug\What's_the_Number.exe.config
+C:\Users\151\Desktop\Skillbox\MyLearning\Projects\What's_the_Number\bin\Debug\What's_the_Number.exe
+C:\Users\151\Desktop\Skillbox\MyLearning\Projects\What's_the_Number\bin\Debug\What's_the_Number.pdb
+C:\Users\151\Desktop\Skillbox\MyLearning\Projects\What's_the_Number\obj\Debug\What's_the_Number.csproj.AssemblyReference.cache
+C:\Users\151\Desktop\Skillbox\MyLearning\Projects\What's_the_Number\obj\Debug\What's_the_Number.csproj.CoreCompileInputs.cache
+C:\Users\151\Desktop\Skillbox\MyLearning\Projects\What's_the_Number\obj\Debug\What's_the_Number.exe
+C:\Users\151\Desktop\Skillbox\MyLearning\Projects\What's_the_Number\obj\Debug\What's_the_Number.pdb
