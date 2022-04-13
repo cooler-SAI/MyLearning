@@ -6,8 +6,12 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            Random rand = new Random();
+            
 
+            for (int i = 0; i <= 15; i++)
+            {
+                Console.WriteLine(i);
+            }
 
             Console.ReadLine();
         }
