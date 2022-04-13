@@ -6,12 +6,11 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            int num = 5;
-            do
+            for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine($"{num} ");
-                num++;
-            } while (num < 100); 
+                if (i % 2 != 0) continue;
+                
+            }
 
             
         }
