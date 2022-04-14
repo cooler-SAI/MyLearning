@@ -9,7 +9,7 @@ namespace Study
             int[] varryable;
             varryable = new int[3];
 
-            int[] varryable2 = new int[3];
+            int[] array = new int[3];
 
         }
     }
