@@ -6,18 +6,18 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the number:");
+            Console.WriteLine("Please Enter the Number N here:");
             int number = int.Parse(Console.ReadLine());
 
             Random rand = new Random();
-            int[] numbersConsole = new int[number];
+            int[] RandomNumbers = new int[number];
 
-            for (int i = 0; i < numbersConsole.Length; i++)
+            for (int i = 0; i < RandomNumbers.Length; i++)
             {
-                numbersConsole[i] = rand.Next(-5, 6);
-                Console.Write($"{numbersConsole[i]} ");
+                RandomNumbers[i] = rand.Next(-6, 5);
+                Console.WriteLine($"{RandomNumbers[i]} ");
             }
-            Console.ReadKey();
+
 
         }
     }
