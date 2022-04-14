@@ -12,7 +12,7 @@ namespace Study
             int[] arrayTwo = new int[5] { 12, 3, 8, 42, 6 };
 
             Array.Clear(arrayOne, 2, 1);
-            Array.Sort(arrayTwo);
+            Array.Reverse(arrayTwo);
 
             Console.WriteLine($"your Array One Data: {arrayOne[0]} {arrayOne[1]} {arrayOne[2]} {arrayOne[3]} {arrayOne[4]}");
             Console.WriteLine($"your Array Two Data: {arrayTwo[0]} {arrayTwo[1]} {arrayTwo[2]} {arrayTwo[3]} {arrayTwo[4]}");
