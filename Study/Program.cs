@@ -18,14 +18,20 @@ namespace Study
             }
 
             int EvenNumbers = 0;
+            int OddNumbers = 0;
             for (int i = 0; i < RandomNumbers.Length; i++)
             {
                 if (RandomNumbers[i] % 2 == 0)
                 {
                     EvenNumbers++;
                 }
+                else
+                {
+                    OddNumbers++;
+                }
             }
             Console.WriteLine($"Summ of Even Numbers is: {EvenNumbers}");
+            Console.WriteLine($"Summ of Odd Numbers is: {OddNumbers}");
         }
     }
 }
