@@ -6,22 +6,15 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Enter the Number N here:");
-            int number = int.Parse(Console.ReadLine());
 
-            Random rand = new Random();
-            int[] RandomNumbers = new int[number];
+            int[] arrayOne = new int[5] { 42, 16, 22, 60, 5 };
 
-            for (int i = 0; i < RandomNumbers.Length; i++)
-            {
-                RandomNumbers[i] = rand.Next(-6, 5);
-                Array.Sort(RandomNumbers);
-                Console.Write($"{RandomNumbers[i]}");
-                Console.WriteLine("");
-                
-            }
-            Console.ReadLine();
+            int[] arrayTwo = new int[5] { 12, 3, 8, 42, 6 };
 
+
+
+            Console.WriteLine($"your Array One Data: {arrayOne[0]} {arrayOne[1]} {arrayOne[2]} {arrayOne[3]} {arrayOne[4]}");
+            Console.WriteLine($"your Array Two Data: {arrayTwo[0]} {arrayTwo[1]} {arrayTwo[2]} {arrayTwo[3]} {arrayTwo[4]}");
         }
     }
 }
