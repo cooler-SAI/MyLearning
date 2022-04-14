@@ -14,8 +14,9 @@ namespace Study
             array[1] = 20;
             array[2] = 42;
             int number = array[0];
+            
 
-            Console.WriteLine(array[1]);
+            Console.WriteLine(array.Length);
 
         }
     }
