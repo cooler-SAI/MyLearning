@@ -14,11 +14,18 @@ namespace Study
 
             for (int i = 0; i < RandomNumbers.Length; i++)
             {
-                RandomNumbers[i] = rand.Next(-6, 5);
-                Console.WriteLine($"{RandomNumbers[i]} ");
+                RandomNumbers[i] = rand.Next(10);
             }
 
-
+            int EvenNumbers = 0;
+            for (int i = 0; i < RandomNumbers.Length; i++)
+            {
+                if (RandomNumbers[i] % 2 == 0)
+                {
+                    EvenNumbers++;
+                }
+            }
+            Console.WriteLine($"Summ of Even Numbers is: {EvenNumbers}");
         }
     }
 }
