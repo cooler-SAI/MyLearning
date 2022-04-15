@@ -10,17 +10,17 @@ namespace Study
 
             int[,] table = new int[4, 4];
 
-            for (int i = 0; i < table.GetLength(0); i++)
+            for (int i = 1; i < table.GetLength(0); i++)
             {
-                int sum = 0;
+                int mult = 1;
 
-                for (int j = 0; j < table.GetLength(1); j++)
+                for (int j = 1; j < table.GetLength(1); j++)
                 {
                     table[i, j] = rand.Next(1, 10);
-                    sum += table[i, j];
+                    mult *= table[i, j];
                     Console.Write($"{table[i,j],2} ");
                 }
-                Console.WriteLine($": {sum}");
+                Console.WriteLine($": {mult}");
             }
             
         }
