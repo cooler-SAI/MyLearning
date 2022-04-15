@@ -21,6 +21,7 @@ namespace Study
                     Console.Write($"{table[i,j],2} ");
                 }
                 Console.WriteLine($": {mult}");
+                Console.WriteLine(table.Rank);
             }
             
         }
