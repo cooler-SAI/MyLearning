@@ -10,23 +10,20 @@ namespace Study
             int heightTriagle = int.Parse(Console.ReadLine());
 
 
+                     
+
             for (int i = 0; i < heightTriagle; i++)
             {
                 for (int j = heightTriagle; j > i; j--)
                 {
-                    Console.Write("#");
+                    Console.Write(" ");
                 }
-                Console.WriteLine();
-            }
-            Console.WriteLine();
-
-            for (int i = 0; i <= heightTriagle; i++)
-            {
-                for (int j = 0; j <= heightTriagle; j++)
+                for (int j = 0; j < i; j++)
                 {
                     Console.Write("#");
                 }
                 Console.WriteLine();
+                
             }
         }
 
