@@ -11,11 +11,11 @@ namespace Study
 
             for (int i = 0; i < heightTriagle; i++)
             {
-                for (int j = heightTriagle; j > i; j--)
+                for (int j = 0; j <= i; j++)
                 {
                     Console.Write(" ");
                 }
-                for (int j = 0; j < i; j++)
+                for (int j = heightTriagle; j > i; j--)
                 {
                     Console.Write("#");
                 }
