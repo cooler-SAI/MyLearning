@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Study
 {
@@ -7,12 +8,9 @@ namespace Study
         static void Main(string[] args)
         {
             // 23
-            int[] myArray = new int[5];
 
-            int[] myArray2 = new int[5] { 1, 2, 3, 4, 5 };
-            int[] myArray3 = new int[] { 1, 2, 3, 4, 5, 6 };
 
-            int[] myArray4 = { 1, 2, 3, 4, 5 };
+            int[] myArray = Enumerable.Repeat(5, 10).ToArray();
             
 
            
