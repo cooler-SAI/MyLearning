@@ -6,23 +6,11 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            bool allowedPassword;
+            Console.WriteLine("Enter the number:");
+            int inputData = int.Parse(Console.ReadLine());
+            int outputData = (inputData < 0) ? 0 : inputData;
 
-            Console.WriteLine("Enter the password, please:");
-            string enteredPassword = Console.ReadLine();
-            string storedPassword = "qwerty";
-
-            //if (enteredPassword == storedPassword)
-            //{
-            //    allowedPassword = true;
-            //}
-            //else
-            //{
-            //    allowedPassword = false;
-            //}
-
-            allowedPassword = enteredPassword == storedPassword ? true : false;
-            Console.WriteLine(allowedPassword);
+            Console.WriteLine(outputData);
 
             
         }
