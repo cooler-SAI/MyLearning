@@ -11,6 +11,8 @@ namespace Study
 
             int[] myArray2 = new int[5] { 1, 2, 3, 4, 5 };
             int[] myArray3 = new int[] { 1, 2, 3, 4, 5, 6 };
+
+            int[] myArray4 = { 1, 2, 3, 4, 5 };
             
 
            
