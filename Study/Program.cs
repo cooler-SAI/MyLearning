@@ -7,10 +7,7 @@ namespace Study
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter height of your Triangle:");
-            int heightTriagle = int.Parse(Console.ReadLine());
-
-
-                     
+            int heightTriagle = int.Parse(Console.ReadLine());                     
 
             for (int i = 0; i < heightTriagle; i++)
             {
