@@ -22,7 +22,7 @@ namespace Study
 
             for (int i = 0; i <= heightTriagle; i++)
             {
-                for (int j = 0; j <= i; j++)
+                for (int j = 0; j <= heightTriagle; j++)
                 {
                     Console.Write("#");
                 }
