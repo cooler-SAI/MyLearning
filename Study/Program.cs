@@ -18,7 +18,16 @@ namespace Study
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
 
+            for (int i = 0; i <= heightTriagle; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+            }
         }
 
     }
