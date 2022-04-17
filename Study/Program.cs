@@ -7,10 +7,17 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            // 23
+            // 26
+            Console.WriteLine("Hello! enter how many elements will be in Array:");
+            int elements;
+            int.TryParse(Console.ReadLine(), out elements);
 
+            int[] myArray = Enumerable.Range(1, elements).ToArray();
 
-            int[] myArray = Enumerable.Repeat(5, 10).ToArray();
+            for (int i = 0; i < elements; i++)
+            {
+                Console.WriteLine(myArray[i]);
+            }
             
 
            
