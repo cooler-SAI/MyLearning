@@ -19,7 +19,7 @@ namespace Study
             {
                 myArray[i] = rand.Next(10);
             }
-            for (int i = 0; i < myArray.Length; i++)
+            for (int i = (myArray.Length -1); i >= 0; i--)
             {
                 Console.WriteLine(myArray[i]);
             }
