@@ -17,13 +17,23 @@ namespace Study
 
             for (int i = 0; i < myArray.Length; i++)
             {
-                Console.WriteLine($"Please enter {i} element:");
-                myArray[i] = int.Parse(Console.ReadLine());
+                myArray[i] = rand.Next(10);
             }
             for (int i = (myArray.Length -1); i >= 0; i--)
             {
                 Console.WriteLine(myArray[i]);
             }
+            int EvenSumm = 0;
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                if (myArray[i] % 2 == 0)
+                {
+                    EvenSumm += myArray[i];
+                }
+            }
+            Console.WriteLine($"Summ Even elements is:{EvenSumm}");
+            Console.ReadLine();
         }
 
     }
