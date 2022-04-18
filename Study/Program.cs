@@ -7,15 +7,27 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            // 26
+            // 27
+            Console.Write("Please enter array leight:");
+            int arrayNum = int.Parse(Console.ReadLine());
+            int[] myArray = new int[arrayNum];
 
-            int[] myArray = { 1, 2, 3, 4, 5 };
 
+
+            Random rand = new Random();
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                myArray[i] = rand.Next(10);
+            }
+
+
+            Console.WriteLine("Your array is:");
+            Console.WriteLine();
             for (int i = 0; i < myArray.Length; i++)
             {
                 Console.WriteLine(myArray[i]);
             }
-           
+            
             
         }
 
