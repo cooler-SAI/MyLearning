@@ -20,6 +20,7 @@ namespace Study
             //{
             //    c = false;
             //}
+
             bool c = (a > b) ? true : false;
             Console.WriteLine(c);
            
