@@ -12,12 +12,12 @@ namespace Study
             int arrayNum = int.Parse(Console.ReadLine());
             int[] myArray = new int[arrayNum];
 
-
-
             Random rand = new Random();
+
             for (int i = 0; i < myArray.Length; i++)
             {
-                myArray[i] = rand.Next(10);
+                Console.WriteLine($"Please enter the value for {i} element:");
+                myArray[i] = int.Parse(Console.ReadLine());
             }
 
 
