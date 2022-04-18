@@ -8,18 +8,20 @@ namespace Study
         static void Main(string[] args)
         {
             // 26
-            Console.WriteLine("Hello! enter how many elements will be in Array:");
-            int elements;
-            int.TryParse(Console.ReadLine(), out elements);
-
-            int[] myArray = Enumerable.Range(1, elements).ToArray();
-
-            for (int i = 0; i < elements; i++)
-            {
-                Console.WriteLine(myArray[i]);
-            }
+            int a = 5;
+            int b = 10;
             
 
+            //if (a > b)
+            //{
+            //    c = true;
+            //}
+            //else
+            //{
+            //    c = false;
+            //}
+            bool c = (a > b) ? true : false;
+            Console.WriteLine(c);
            
             
         }
