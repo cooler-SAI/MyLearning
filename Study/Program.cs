@@ -10,15 +10,7 @@ namespace Study
             // 27
             int[] myArray = { 10, 15, 42, 80, 2 };
 
-            int minValue = myArray[0];
-
-            for (int i = 0; i < myArray.Length; i++)
-            {
-                if (myArray[i] < minValue)
-                {
-                    minValue = myArray[i];
-                }
-            }
+            int minValue = myArray.Min();
             Console.WriteLine($"Minimun element value is {minValue}");
         }
 
