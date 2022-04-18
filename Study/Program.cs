@@ -6,14 +6,11 @@ namespace Study
     class Program
     {
         static void Main(string[] args)
-        {
-            // 27
-            int[] myArray = { 10, 10, 43, 10 };
+        {            // 27
 
-            int minValue = myArray.Where(e => e % 2 != 0).Sum();
+            int[] myArray = { 20, 13, 22, 2 };
 
-            Console.WriteLine($"Minimun element value is {minValue}");
+            int[] result = myArray.OrderByDescending(e => e).ToArray();
         }
 
-    }
-}
+    }}
