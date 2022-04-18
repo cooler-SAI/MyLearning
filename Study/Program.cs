@@ -11,6 +11,9 @@ namespace Study
             int[] myArray = { 20, 13, 22, 2 };
 
             int[] result = myArray.OrderByDescending(e => e).ToArray();
+
+            int elementSumm = myArray.Sum();
+            Console.WriteLine(elementSumm);
         }
 
     }}
