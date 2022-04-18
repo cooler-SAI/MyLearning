@@ -21,19 +21,19 @@ namespace Study
             }
             for (int i = (myArray.Length -1); i >= 0; i--)
             {
-                Console.WriteLine(myArray[i]);
+                Console.Write(" " + myArray[i]);
             }
-            int EvenSumm = 0;
 
+            int minValue = myArray[0];
             for (int i = 0; i < myArray.Length; i++)
             {
-                if (myArray[i] % 2 == 0)
+                if (myArray[i] < myArray[0])
                 {
-                    EvenSumm += myArray[i];
+                    minValue = myArray[i];
                 }
             }
-            Console.WriteLine($"Summ Even elements is:{EvenSumm}");
-            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine($"Your min value is: {minValue} ");
         }
 
     }
