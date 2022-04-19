@@ -18,7 +18,7 @@ namespace Study
 
             foreach (var e in myArray)
             {
-                Console.WriteLine(e);
+                Console.Write($"{e} ");
             }
 
 
