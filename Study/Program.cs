@@ -18,10 +18,18 @@ namespace Study
 
             for (int i = 0; i < height; i++)
             {
+                               
                 for (int j = 0; j < width; j++)
                 {
-                    myArray[i, j] = rand.Next(5, 10);
-
+                    Console.WriteLine($"Please Enter value height:{i} width:{j}");
+                    myArray[i, j] = int.Parse(Console.ReadLine());                    
+                }
+                
+            }
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = 0; j < width; j++)
+                {
                     Console.Write($"{myArray[i, j]} ");
                 }
                 Console.WriteLine();
