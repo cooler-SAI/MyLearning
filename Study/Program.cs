@@ -16,11 +16,19 @@ namespace Study
 
             };
 
-            foreach (var e in myArray)
-            {
-                Console.Write($"{e} ");
-            }
+            int height = myArray.GetLength(0);
+            int width = myArray.GetLength(1);
 
+            for (int h = 0; h < height; h++)
+            {
+                for (int w = 0; w < width; w++)
+                {
+                    Console.Write(myArray[h,w] + "\t");
+
+                }
+                Console.WriteLine();
+            }
+            
 
             
         }
