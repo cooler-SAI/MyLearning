@@ -7,9 +7,15 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            int[,] myArray = new int[3, 5];
+            int[,] myArray = new int[3, 5]
+            {
+                {1,2,4,4,4 },
+                {12,41,62,4,5 },
+                {42,12,10,74,10 },
+                
+            };       
 
-            myArray[0, 4] = 99;
+
 
             Console.WriteLine(myArray[0,4]);
         }
