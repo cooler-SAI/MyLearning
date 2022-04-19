@@ -14,11 +14,15 @@ namespace Study
                 {42,12,10,74,10 },
                 {42,12,10,74,10 }
 
-            };       
+            };
+
+            foreach (var e in myArray)
+            {
+                Console.WriteLine(e);
+            }
 
 
-
-            Console.WriteLine(myArray[0,4]);
+            
         }
 
     }}
