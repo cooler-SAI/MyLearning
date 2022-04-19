@@ -7,7 +7,7 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            int[,] myArray = new int[3, 5]
+            int[,] myArray = new int[,]
             {
                 {1,2,4,4,4 },
                 {12,41,62,4,5 },
