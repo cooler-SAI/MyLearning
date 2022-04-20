@@ -7,24 +7,33 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            int[,,] myArray =
+            int[,,] myArray = new int[4, 3, 5];
+
+            Random rand = new Random();
+
+            for (int i = 0; i < myArray.GetLength(0); i++)
             {
+                for (int j = 0; j < myArray.GetLength(1); j++)
                 {
-                    {22,12,45 },
-                    {12,25,33 }
-                },
-
-                {
-                    {22,12,45 },
-                    {12,25,33 }
-                },
-
-                {
-                    {22,12,45 },
-                    {12,25,33 }
+                    for (int k = 0; k < myArray.GetLength(2); k++)
+                    {
+                        myArray[i, j, k] = rand.Next(100);
+                    }
                 }
+            }
 
-            };
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                Console.WriteLine($"######### Page {i}:");
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    for (int k = 0; k < myArray.GetLength(2); k++)
+                    {
+                        Console.Write($"{myArray[i, j, k]} ");
+                    }
+                    Console.WriteLine();
+                }
+            }
         }
 
     }}
