@@ -7,8 +7,8 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            //33
-
+            int[][] myArray = new int[5][];
+            myArray[0] = new int[5];
         }
 
     }}
