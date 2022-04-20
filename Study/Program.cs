@@ -7,8 +7,7 @@ namespace Study
     {
         static int Sum (int a, int b)
         {
-            int result = a + b;
-            return result;
+            return  a + b;
         }
 
         static void Main(string[] args)
