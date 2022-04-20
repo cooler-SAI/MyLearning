@@ -12,7 +12,7 @@ namespace Study
 
         static void Main(string[] args)
         {
-            int a, b, c;
+            int a, b;
 
             a = int.Parse(Console.ReadLine());
             b = int.Parse(Console.ReadLine());
