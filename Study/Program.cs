@@ -14,6 +14,8 @@ namespace Study
 
             int c = a + b;
 
+            Console.WriteLine(c);
+
 
         }
 
