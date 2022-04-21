@@ -5,9 +5,14 @@ namespace Study
 {
     class Program
     {
-        static int Sum(int a,int b)
+        static int Result(int a,int b)
         {
-            return a + b;
+            return a * b;
+        }
+
+        static void Info()
+        {
+            Console.WriteLine("Result Here!");
         }
 
         static void Main(string[] args)
@@ -16,7 +21,11 @@ namespace Study
             int b = 10;
 
 
-            int c = a + b;
+            int c = Result(a, b);
+
+
+            Info();
+
 
             Console.WriteLine(c);
 
