@@ -6,7 +6,7 @@ namespace Study
 {
     class Program
     {
-        static void PrintLine (string symbol, uint symbolsCount)
+        static void PrintLine (char symbol, uint symbolsCount)
         {
             for (int i = 0; i < symbolsCount; i++)
             {
@@ -16,9 +16,10 @@ namespace Study
         static void Main(string[] args)
         {
             // Homework!
-            Console.WriteLine("Please enter the symbol:");
-            string symbol = Console.ReadLine();
-            Console.WriteLine("Please enter Number of symbols:");
+            Console.Write("Please enter the symbol:");
+            char symbol = Console.ReadKey().KeyChar;
+            Console.WriteLine();
+            Console.Write("Please enter Number of Symbols:");
             uint symbolsCount = uint.Parse(Console.ReadLine());
 
 
