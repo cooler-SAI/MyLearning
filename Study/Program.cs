@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Threading;
 
 
 namespace Study
@@ -11,16 +12,22 @@ namespace Study
             Console.WriteLine("Hello World!");
         }
 
-         static void Pause()
+         static void PauseMe()
         {
             Console.ReadLine();
+        }
+
+        static void Pause (int Interval)
+        {
+            Thread.Sleep(Interval * 1000);
         }
 
 
         static void Main(string[] args)
         {
             Hello();
-            Pause();
+            PauseMe();
+            PauseMe()
 
         }
 
