@@ -27,7 +27,7 @@ namespace Study
         {
             Hello();
             PauseMe();
-            PauseMe()
+            PauseMe();
 
         }
 
