@@ -13,7 +13,7 @@ namespace Study
         }
         static void ConsoleMessage()
         {
-            System.Console.WriteLine("Hello to all here!");
+            Console.WriteLine("Hello to all here!");
             
         }
         static void PrintSymbols(string symbol, uint count)
@@ -22,7 +22,15 @@ namespace Study
             {
                 Console.Write(symbol);
             }
-        }                
+        }
+        static void PrintText(string text)
+        {
+            Console.WriteLine(text);
+        }
+        static void UserWord()
+        {
+            Console.ReadLine();
+        }
         static void Main(string[] args)
         {
             int a = 10;
@@ -39,9 +47,16 @@ namespace Study
 
             Console.WriteLine("Please enter the counts: ");
             uint count = uint.Parse(Console.ReadLine());
-
             PrintSymbols(symbol, count);
 
+            PrintText("\nHi all here!! ");
+
+
+            PrintText("Enter test text");
+            UserWord();
+
+
+            Console.ReadKey();
 
 
 
