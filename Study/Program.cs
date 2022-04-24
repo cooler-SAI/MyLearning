@@ -11,21 +11,18 @@ namespace Study
         {
             return a + b;
         }
-
         static void ConsoleMessage()
         {
             System.Console.WriteLine("Hello to all here!");
             
         }
-
         static void PrintSymbols(string symbol, uint count)
         {
             for (int i = 0; i < count; i++)
             {
                 Console.Write(symbol);
             }
-        }
-                
+        }                
         static void Main(string[] args)
         {
             int a = 10;
