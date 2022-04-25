@@ -15,31 +15,27 @@ namespace Study
         public static void Hi (string Name)
         {
             Random rand = new Random();
-            string userText = string.Empty;
+            string text = string.Empty;
 
             switch (rand.Next(3))
             {
                 case 0:
-                    userText = $"Hello,{Name}";
+                    text = $"Hello,{Name}";
                     break;
                 case 1:
-                    userText = $"Asshole,{Name}";
+                    text = $"Asshole,{Name}";
                     break;
                 default:
-                    userText = $"Ullalaaa,{Name}";
+                    text = $"Ullalaaa,{Name}";
                     break;
             }
-            Console.WriteLine(Name);
+            Console.WriteLine(text);
         }
         
         static void Main(string[] args)
         {
-            Pause();
-
-
-            Console.WriteLine("Please Enter Your Name: ");
-            string Name = Console.ReadLine();
-            Hi(Name);
+            Pause();            
+            Hi("Ander");
         }
 
     }
