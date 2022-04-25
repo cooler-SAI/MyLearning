@@ -12,17 +12,34 @@ namespace Study
             Console.ReadKey();
         }
 
-        static double UserNumber (double num1, double num2)
+        public static void Hi (string Name)
         {
-            return num1 * num2;
+            Random rand = new Random();
+            string userText = string.Empty;
+
+            switch (rand.Next(3))
+            {
+                case 0:
+                    userText = $"Hello,{Name}";
+                    break;
+                case 1:
+                    userText = $"Asshole,{Name}";
+                    break;
+                default:
+                    userText = $"Ullalaaa,{Name}";
+                    break;
+            }
+            Console.WriteLine(Name);
         }
         
         static void Main(string[] args)
         {
             Pause();
-            double num1 = 5;
-            double num2 = 5;
-            Console.WriteLine(UserNumber(num1, num2)); 
+
+
+            Console.WriteLine("Please Enter Your Name: ");
+            string Name = Console.ReadLine();
+            Hi(Name);
         }
 
     }
