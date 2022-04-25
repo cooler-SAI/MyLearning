@@ -7,6 +7,12 @@ namespace Study
 {
     class Program
     {
+        /// <summary>
+        /// Summ of 2 numbers
+        /// </summary>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <returns></returns>
         static int Result( int num1, int num2)
         {
             return num1 + num2;
