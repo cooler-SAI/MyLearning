@@ -7,38 +7,28 @@ namespace Study
 {
     class Program
     {
-        static void Pause()
+        static int IndexOf( int[] UserArray, int num)
         {
-            Console.ReadKey();
-        }
-
-        public static void Hi (string Name)
-        {
-            Random rand = new Random();
-            string text = string.Empty;
-
-            switch (rand.Next(3))
+            for (int i = 0; i < UserArray.Length; i++)
             {
-                case 0:
-                    text = $"Hello,{Name}";
-                    break;
-                case 1:
-                    text = $"Asshole,{Name}";
-                    break;
-                default:
-                    text = $"Ullalaaa,{Name}";
-                    break;
+                if (UserArray[i] == num)
+                {
+                    return i;
+                }
             }
-            Console.WriteLine(text);
+            return -1;
         }
+            
         
+                
         static void Main(string[] args)
         {
-            Pause();
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            int[] myArray = { 22, 15, 16, 21, 30 };
+            int result = IndexOf(myArray, 21);
 
-            
-            Hi("Ander");
+            Console.WriteLine($" Element, that has this value is: {result} ");
+
+
         }
 
     }
