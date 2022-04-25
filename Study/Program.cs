@@ -34,7 +34,10 @@ namespace Study
         
         static void Main(string[] args)
         {
-            Pause();            
+            Pause();
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+
+            
             Hi("Ander");
         }
 
