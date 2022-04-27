@@ -29,6 +29,14 @@ namespace Study
             int num2 = int.Parse(Console.ReadLine());
 
             Console.WriteLine(NumResult(num1,num2));
+
+            int[] myArray = { 12, 22, 45, 16 };
+            int result = 0;
+            foreach (var e in myArray)
+            {
+                result = e + 100;
+            }
+            Console.WriteLine(result);
         }
 
     }
