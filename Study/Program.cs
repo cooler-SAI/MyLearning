@@ -28,7 +28,7 @@ namespace Study
             Console.WriteLine("Please enter num 2: ");
             int num2 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(NumResult(num1,num2);
+            Console.WriteLine(NumResult(num1,num2));
         }
 
     }
