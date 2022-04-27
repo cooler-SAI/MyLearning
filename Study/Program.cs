@@ -37,6 +37,10 @@ namespace Study
                 result = e + 100;
             }
             Console.WriteLine(result);
+
+            int[,] myArray2 = new int[10, 12];
+
+            
         }
 
     }
