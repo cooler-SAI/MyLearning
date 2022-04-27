@@ -9,12 +9,13 @@ namespace Study
     {      
         static void Text(string Text)
         {
-            Console.WriteLine();
+            Console.WriteLine(Text);
         }
 
         static void Main(string[] args)
         {
             Text("Hi all here!");
+            Console.WriteLine("Hi guys! ");
         }
 
     }
