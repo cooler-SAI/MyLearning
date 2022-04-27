@@ -12,10 +12,23 @@ namespace Study
             Console.WriteLine(Text);
         }
 
+        static int NumResult(int num1, int num2)
+        {
+            return num1 * num2; 
+        }
+
         static void Main(string[] args)
         {
             Text("Hi all here!");
             Console.WriteLine("Hi guys! ");
+
+            Console.WriteLine("Please enter Num 1: ");
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter num 2: ");
+            int num2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(NumResult(num1,num2);
         }
 
     }
