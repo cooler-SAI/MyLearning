@@ -11,23 +11,7 @@ namespace Study
         
         static void Main(string[] args)
         {
-            string text = File.ReadAllText(@"e:/info.txt");
-            Console.WriteLine(text);
-
-            Console.WriteLine("===================================");
-
-            string [] text2 = File.ReadAllLines(@"e:/info.txt");
-            foreach (var line in text2)
-            {
-                Console.WriteLine(line);
-            }
-
-            Console.WriteLine("===================================");
-
-            FileInfo fileinfo = new FileInfo(@"e:/info.txt");
-            Console.WriteLine(fileinfo.Extension);
-
-            Directory directory = new DirectoryInfo(patch);
+            
 
         }
 
