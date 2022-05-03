@@ -17,7 +17,7 @@ namespace Study
             char[] symbols = "Hi all here 2022!".ToCharArray();
             foreach (var item in symbols)
             {
-                Console.Write($"{item}");
+                Console.Write($"{item} 20");
             }
             
         }
