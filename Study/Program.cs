@@ -22,6 +22,8 @@ namespace Study
                 Console.WriteLine(line);
             }
 
+            File.Copy(@"e:/info.txt", @"e:/new/info.txt");
+
         }
 
     }
