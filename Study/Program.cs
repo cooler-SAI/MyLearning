@@ -12,7 +12,7 @@ namespace Study
         static void Main(string[] args)
         {
             string text = "Hello Here!";
-            Console.WriteLine($"{text} {text.Remove(2,2)}");
+            Console.WriteLine($"{text} = {text.ToLower()}");
             
         }
 
