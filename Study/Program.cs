@@ -11,14 +11,7 @@ namespace Study
         
         static void Main(string[] args)
         {
-            string text = "Hello Here!";
-            Console.WriteLine($"{text} = {text.ToLower()}");
-
-            char[] symbols = "Hi all here 2022!".ToCharArray();
-            foreach (var item in symbols)
-            {
-                Console.Write($"{item} 20");
-            }
+                        
             
         }
 
