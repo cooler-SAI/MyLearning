@@ -12,7 +12,7 @@ namespace Study
         static void Main(string[] args)
         {
             string text = "Hello Here!";
-            Console.WriteLine($"{text} + {text.IndexOf('l')}");
+            Console.WriteLine($"{text} {text.LastIndexOf('l')}");
             
         }
 
