@@ -22,10 +22,12 @@ namespace Study
                 Console.WriteLine(line);
             }
 
-            
+            Console.WriteLine("===================================");
 
             FileInfo fileinfo = new FileInfo(@"e:/info.txt");
-            Console.WriteLine(fileinfo.Attributes);
+            Console.WriteLine(fileinfo.Extension);
+
+            Directory directory = new DirectoryInfo(patch);
 
         }
 
