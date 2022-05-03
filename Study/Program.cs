@@ -22,7 +22,10 @@ namespace Study
                 Console.WriteLine(line);
             }
 
-            File.Copy(@"e:/info.txt", @"e:/new/info.txt");
+            
+
+            FileInfo fileinfo = new FileInfo(@"e:/info.txt");
+            Console.WriteLine(fileinfo.Attributes);
 
         }
 
