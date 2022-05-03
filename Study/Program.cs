@@ -11,7 +11,8 @@ namespace Study
         
         static void Main(string[] args)
         {
-                        
+            string text = File.ReadAllText(@"e:/info.txt");
+            Console.WriteLine(text);
             
         }
 
