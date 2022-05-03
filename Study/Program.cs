@@ -13,7 +13,13 @@ namespace Study
         {
             string text = File.ReadAllText(@"e:/info.txt");
             Console.WriteLine(text);
-            
+
+            string [] text2 = File.ReadAllLines(@"e:/info.txt");
+            foreach (var line in text2)
+            {
+                Console.WriteLine(line);
+            }
+
         }
 
     }
