@@ -11,6 +11,7 @@ namespace Study
     {        
         static void Main(string[] args)
         {
+            Empire Faction1 = new Empire();
 
             
         }
