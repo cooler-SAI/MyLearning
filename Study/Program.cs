@@ -21,6 +21,7 @@ namespace Study
         {
             Empire Faction1 = new Empire("Glory Race", "Strong Dwarfs", "Mighty Race");
             Console.WriteLine(Faction1.Info());
+
             Console.WriteLine();
             WelcomeRaceInfo();
             Console.WriteLine($"Hello, Player! Please choose your character class: 1, 2 or 3");
