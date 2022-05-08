@@ -20,5 +20,21 @@ namespace Study
         /// More glory and Older race of this world
         /// </summary>
         public string HighElves;
+
+        public string Info()
+        {
+            return $": Glory Race\n" +
+                $": strong Race\n" +
+                $": glory and Older race\n ";
+
+        }
+
+        public Empire(string Humans, string Dwarfs, string HighElves)
+        {
+            this.Humans = Humans;
+            this.Dwarfs = Dwarfs;
+            this.HighElves = Dwarfs;
+
+        }
     }
 }

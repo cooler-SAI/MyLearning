@@ -15,15 +15,12 @@ namespace Study
                 "\n1 - Humans = Glory Race"+
                 "\n2 - Dwarfs = Glory Race"+
                 "\n3 - Elves = Glory Race"
-                );
-            
+                );            
         }
         static void Main(string[] args)
         {
-            Empire Faction1 = new Empire();
-            Faction1.Humans = "Glory Race";
-            Faction1.Dwarfs = "strong Race";
-            Faction1.HighElves = "Older race";
+            Empire Faction1 = new Empire("Glory Race", "Strong Dwarfs", "Mighty Race");
+            Console.WriteLine(Faction1.Info());
             Console.WriteLine();
             WelcomeRaceInfo();
             Console.WriteLine($"Hello, Player! Please choose your character class: 1, 2 or 3");
