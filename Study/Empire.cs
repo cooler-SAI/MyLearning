@@ -36,6 +36,13 @@ namespace Study
             this.HighElves = Dwarfs;
 
         }
-        
+        public Empire(string Humans, string Dwarfs) :
+            this(Humans, Dwarfs)
+        {
+
+
+        }
+
+
     }
 }
