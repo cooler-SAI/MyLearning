@@ -33,11 +33,11 @@ namespace Study
         {
             this.Humans = Humans;
             this.Dwarfs = Dwarfs;
-            this.HighElves = Dwarfs;
+            this.HighElves = HighElves;
 
         }
         public Empire(string Humans, string Dwarfs) :
-            this(Humans, Dwarfs)
+            this(Humans, Dwarfs, "funny Elves!")
         {
 
 
