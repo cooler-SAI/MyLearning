@@ -94,7 +94,7 @@ namespace Study
         public string WorkerDataLine()
         {
             return $"{id}#{addingTime}#{workerFullName}#{workerAge}" +
-                $"#{workerHeight}#{workerDateofBirth}#{workerDateofBirth}";
+                $"#{workerHeight}#{workerDateofBirth}#{workerPlaceofBirth}";
         }
         #endregion
 
