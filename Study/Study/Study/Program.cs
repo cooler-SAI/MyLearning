@@ -8,6 +8,8 @@
             list.Add("Elves");
             list.Add("Gnomes");
             list.Add("Orcs");
+
+            list.Insert(1, "Humans");
             foreach (string item in list)
             {
                 Console.WriteLine($"\nRace is: {item} ");
