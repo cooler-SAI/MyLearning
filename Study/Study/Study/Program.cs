@@ -10,6 +10,10 @@
             list.Add("Orcs");
 
             list.Insert(1, "Humans");
+            list.Insert(1, "Humans");
+
+            list.Remove(list[1]);
+
             foreach (string item in list)
             {
                 Console.WriteLine($"\nRace is: {item} ");
