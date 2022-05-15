@@ -1,4 +1,4 @@
-﻿namespace HelloWorld
+﻿namespace Study
 {
     class Program
     {
@@ -25,6 +25,10 @@
         {
             return (int)Math.Pow(number, 2);
         }
+        static string GetLastHalf(string text)
+        {
+            return (text).Substring(text.Length / 2);
+        }        
         static void Main(string[] args)
         {
             Console.WriteLine(DivideandRound(8, 2));
@@ -32,9 +36,11 @@
             Console.WriteLine(GetGreetingMessage("Ander", 12000));
 
             Print(GetSquare(42));
+
         }
 
         
     }
+  
 }
 

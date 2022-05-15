@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Using Include="System.Globalization" />
+    <Using Include="System.Globalization"/>    
   </ItemGroup>
 
 </Project>
