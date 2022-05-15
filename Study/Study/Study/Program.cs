@@ -12,7 +12,7 @@
             {
                 Console.WriteLine($"\nRace is: {item} ");
             }
-
+            Console.ReadLine();
         }
         
     }
