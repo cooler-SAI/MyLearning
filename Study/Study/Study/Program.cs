@@ -14,6 +14,11 @@
 
             list.Remove(list[1]);
 
+            list.Sort();
+
+            list.Add("Orcs");
+            list.RemoveAt(4);
+
             foreach (string item in list)
             {
                 Console.WriteLine($"\nRace is: {item} ");
