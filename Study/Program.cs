@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Study
 {
     public class Program
-    {        
+    {
         public static void Main(string[] args)
         {
             //////////////////////////////////////////////////////////////////////
@@ -19,12 +19,12 @@ namespace Study
 
             Console.ReadKey();
             //////////////////////////////////////////////////////////////////////
-            
-            
-            
 
-            
-            
+
+
+
+
+
 
 
 

@@ -17,10 +17,10 @@ namespace Study
             int listSize = 100; // we added List size here
             int count = 0; // we set numbers counter here
 
-            for (int i = 0; i<listSize; i++) 
+            for (int i = 0; i < listSize; i++)
             {
                 list.Add(random.Next(0, 100)); // we fill List by Random numbers here
-                count++; 
+                count++;
             }
             Console.WriteLine($"You have {count} numbers here: "); // we place number counter to console
         }
@@ -51,12 +51,11 @@ namespace Study
                 count++;
                 if (list[i] >= MinNumber && list[i] <= MaxNumber)
                 {
-                    list.RemoveAt(i); // we delete numbers here
-                                     
-                }                               
+                    list.RemoveAt(i); // we delete numbers here                                     
+                }
             }
             Console.WriteLine($"\nYou have {count} numbers here: "); // we place number counter to console
-            return list;            
+            return list;
         }
         #endregion
         //////////////////////////////////////////////////////////////////////
