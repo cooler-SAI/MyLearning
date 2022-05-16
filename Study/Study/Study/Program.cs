@@ -11,10 +11,12 @@
             {
                 workers.Add(
                     new Worker(
-                        $"Имя_{i}",
-                        $"Фамилия_{i}",
-                        $"Должность_{i}",
-                        (uint)random.Next(1000, 2000),
+                        (int)random.Next(0,10),
+                        DateTime.Now,
+                        $"Worker Fullname_{i}",
+                        random.Next(19,44),
+                        random.Next(170, 182),
+                        DateTime.Now,
                         $"Отдел_{i}"));
             }
 
