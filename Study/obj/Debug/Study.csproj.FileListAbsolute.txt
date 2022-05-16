@@ -28,3 +28,4 @@ C:\Users\151\Desktop\Skillbox\Study\Study\obj\Debug\Study.csproj.SuggestedBindin
 C:\Users\151\Desktop\Skillbox\Study\Study\obj\Debug\Study.csproj.CoreCompileInputs.cache
 C:\Users\151\Desktop\Skillbox\Study\Study\obj\Debug\Task_1.exe
 C:\Users\151\Desktop\Skillbox\Study\Study\obj\Debug\Task_1.pdb
+C:\Users\151\Desktop\Skillbox\MyLearning\Study\obj\Debug\Study.csproj.SuggestedBindingRedirects.cache
