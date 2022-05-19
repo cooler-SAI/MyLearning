@@ -7,6 +7,7 @@ namespace Study
     {
         public static void Main(string[] args)
         {
+            #region Task 1
             //////////////////////////////////////////////////////////////////////
             // Task 1
             //WorkingRoom workingroom = new WorkingRoom(); // link Methods here
@@ -18,7 +19,9 @@ namespace Study
             //workingroom.ShowList(numbers); // Show List in Console
 
             //Console.ReadKey();
+            #endregion
             //////////////////////////////////////////////////////////////////////
+            #region Task 2
             // Task 2
             //WorkingRoom workingroom = new WorkingRoom(); // we add methods here           
             //var phonebook = new Dictionary<string, string>(); // we create dictionary here
@@ -61,7 +64,9 @@ namespace Study
             //    phonebook.Clear();
             //    Console.Clear();
             //}
+            #endregion
             //////////////////////////////////////////////////////////////////////
+            #region Task 3
             // Task 3
             //WorkingRoom workingroom = new WorkingRoom(); // we add methods here
             //var hashset= new HashSet<int>();
@@ -95,6 +100,7 @@ namespace Study
             //    }
             //    Console.Clear();
             //}
+            #endregion
             //////////////////////////////////////////////////////////////////////
 
 
