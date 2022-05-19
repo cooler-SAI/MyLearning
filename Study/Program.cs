@@ -63,6 +63,39 @@ namespace Study
             //}
             //////////////////////////////////////////////////////////////////////
             // Task 3
+            //WorkingRoom workingroom = new WorkingRoom(); // we add methods here
+            //var hashset= new HashSet<int>();
+
+            //while (true)
+            //{
+            //    workingroom.MainMenuTitle();
+            //    Console.WriteLine("\nPlease enter the number for menu navigation: " +
+            //        "\n 1 - Show all Hash Data." +
+            //        "\n 2 - Add Data to Hash" +
+            //        "\n 3 - About Programm.");
+            //    int UserChoise;
+            //    int.TryParse(Console.ReadLine(), out UserChoise);
+            //    switch (UserChoise)
+            //    {
+            //        case 1:workingroom.ShowHashData(hashset);
+            //            break;
+            //        case 2:workingroom.AddData(hashset);                           
+            //            break;
+            //        case 3:
+            //            Console.Clear();
+            //            Console.WriteLine("Program Created by Ander(cooler-SAI)" +
+            //                    "\n v 1.0 (19.05.2022) Stavropol City, Russia" +
+            //                    "\n" +
+            //                    "\nPress any key to continue..."); // about program
+            //            Console.ReadKey();
+            //            break;
+            //        default:
+            //            Console.WriteLine("\nWrong number! Please try again...");
+            //            break;
+            //    }
+            //    Console.Clear();
+            //}
+            //////////////////////////////////////////////////////////////////////
 
 
 

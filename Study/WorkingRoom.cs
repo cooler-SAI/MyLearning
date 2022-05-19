@@ -200,8 +200,70 @@ namespace Study
         #endregion
         //////////////////////////////////////////////////////////////////////
         // Task 3
+        #region Methods 
+        /// <summary>
+        /// Main screen Logo
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
+        public void MainMenuTitle()
+        {
+            Console.WriteLine("\n======================= HASH DATA =======================" +
+                "\n");
+        }
+        /// <summary>
+        /// Add Data into the HashSet
+        /// </summary>
+        /// <param name="hashset"></param>
+        public void AddData(HashSet<int> hashset)
+        {
+            Console.Clear();
+            Console.WriteLine("\nPlease enter the number: ");
 
-
-
+            while (true)
+            {
+                var UserNumber = Console.ReadLine();
+                if (int.TryParse(UserNumber, out var value))
+                {
+                    if (!hashset.Contains(value))
+                    {
+                        Console.WriteLine($"\nYour number is {UserNumber} added to Hash.");
+                        hashset.Add(value);
+                        Console.WriteLine("\nPress any key to continue...");
+                        Console.ReadKey();
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{value} already in Hash.");
+                        Console.WriteLine("\nPress any key to continue...");
+                        Console.ReadKey();
+                        break;
+                    }
+                }
+                else
+                {                    
+                    Console.WriteLine("\nError! Please enter the number again... ");
+                    Console.WriteLine("\nPress any key to continue...");
+                    Console.ReadKey();
+                    break;
+                }
+            }            
+        }
+        /// <summary>
+        /// Show HashSetData into console
+        /// </summary>
+        /// <param name="hashset"></param>
+        public void ShowHashData(HashSet<int> hashset)
+        {
+            Console.WriteLine("Your HashSet:\n");
+            foreach (var e in hashset)
+            {
+                Console.Write($"HashSet Data is:{e} ");
+            }
+                
+        }
+        #endregion
+        //////////////////////////////////////////////////////////////////////
     }
 }
