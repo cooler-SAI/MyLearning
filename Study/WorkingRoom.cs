@@ -63,141 +63,143 @@ namespace Study
         //////////////////////////////////////////////////////////////////////
         // Task 2
         #region Methods        
-        /// <summary>
-        /// Main screen Logo
-        /// </summary>
-        /// <param name="list"></param>
-        /// <returns></returns>
-        public void MainMenuTitle ()
-        {
-            Console.WriteLine("\n======================= PHONE BOOK =======================" +
-                "\n");
-        }
-        /// <summary>
-        /// Show All PhoneBook Data
-        /// </summary>
-        /// <param name="book"></param>
-        public void PhoneBookData(Dictionary<string, string> dictionary)
-        {            
-            Console.WriteLine("\nPhoneBook Data: " +
-                "\n");
-            foreach (var line in dictionary) Console.WriteLine($"{line}");
-            Console.WriteLine("\nPress any key to continue...");
-            Console.ReadKey();
-        }
-        /// <summary>
-        /// Load All PhoneBook Data in memory
-        /// </summary>
-        /// <param name = "book" ></ param >
-        public void LoadPhoneBookData(ref Dictionary<string, string> dictionary)
-        {
-            try
-            {
-                var lines = File.ReadAllLines(@"dictionary.csv");
-                foreach (var line in lines)
-                {
-                    var data = line.Split('\t'); // we create array here for work
-                    var key = data[0].Trim(); 
-                    var value = string.Join("", data.Skip(1)).Trim();
-                    dictionary[key] = value;
-                }
-            }
-            catch (Exception)
-            {
-                Console.Clear();
-                Console.WriteLine("Error! Please load dictionary.csv or create NEW" +
-                    "Before run the Programm." +
-                    "\nPress any key to close the application...");
-                Console.ReadKey();
-            }
-            
-        }
-        /// <summary>
-        /// Add Number and User to PhoneBook
-        /// </summary>
-        /// <param name="book"></param>
-        public void AddNumberUser(ref Dictionary<string, string> dictionary)
-        {
-            while (true)
-            {
-                Console.Clear();
-                Console.WriteLine("\nPlease enter the Number for new User: " +
-                    "\nExample (x-xxx-xxx-xx-xx) " +
-                    "\nWhere x is number....");
-                var AddNumber = Console.ReadLine();
-                if (AddNumber == string.Empty)
-                {
-                    Console.WriteLine("\nIncorrect format! Please try again. ");
-                    break;
-                }
-                while (true)
-                {
-                    Console.Clear();
-                    Console.WriteLine("\nPlease enter the FullName for new User: " +
-                    "\nExample (Shatokhin Andrey Sergeevich) ");
-                    var AddName = Console.ReadLine();
-                    if (AddName == string.Empty)
-                    {
-                        Console.WriteLine("\nIncorrect format! Please try again. ");
-                        break;
-                    }
-                    Console.Clear();
-                    dictionary.Add(AddNumber, AddName);
-                    Console.WriteLine($"\nSuccess! New User added to PhoneBook!" +
-                        $"\nNew User Data is :" +
-                        $"\nNumber: {AddNumber} and Name: {AddName} ");
-                    Console.ReadKey();
-                    break;
-                }
-                break;
-            }
-            SavePhoneBookData(ref dictionary);
-        }
-        /// <summary>
-        /// Seach Number and User 
-        /// </summary>
-        /// <param name="book"></param>
-        public void SearchNumberUser(Dictionary<string, string> dictionary)
-        {
-            while (true)
-            {
-                Console.Clear();
-                Console.WriteLine("\nPlease enter the Number for search User: " +
-                        "\nExample (x-xxx-xxx-xx-xx) " +
-                        "\nWhere x is number....");
-                var key = Console.ReadLine();
-                if (dictionary.TryGetValue($"{key}", out var value))
-                {
-                    Console.Clear();
-                    Console.WriteLine($"Result is: " +
-                        $"\nNumber: {key} " +
-                        $"\nUser: {value} ");
-                    Console.WriteLine("\nPress any key to continue...");
-                    Console.ReadKey();
-                }
-                else
-                {
-                    Console.WriteLine("\nIncorrect Data! Please try again...");
-                    Console.WriteLine("\nPress any key to continue...");
-                    Console.ReadKey();
-                }
-                break;
-            }
-            
-        }
-        /// <summary>
-        /// Save Dictionary (PhoneBook) into the file
-        /// </summary>
-        /// <param name="dictionary"></param>
-        public void SavePhoneBookData(ref Dictionary<string, string> dictionary)
-        {
-            using (var streamWriter = new StreamWriter(@"dictionary.csv"))
-            {
-                foreach (var keyValue in dictionary) 
-                    streamWriter.WriteLine($"{keyValue.Key}\t{keyValue.Value}");
-            }
-        }
+        ///// <summary>
+        ///// Main screen Logo
+        ///// </summary>
+        ///// <param name="list"></param>
+        ///// <returns></returns>
+        //public void MainMenuTitle ()
+        //{
+        //    Console.WriteLine("\n======================= PHONE BOOK =======================" +
+        //        "\n");
+        //}
+        ///// <summary>
+        ///// Show All PhoneBook Data
+        ///// </summary>
+        ///// <param name="book"></param>
+        //public void PhoneBookData(Dictionary<string, string> dictionary)
+        //{            
+        //    Console.WriteLine("\nPhoneBook Data: " +
+        //        "\n");
+        //    foreach (var line in dictionary) Console.WriteLine($"{line}");
+        //    Console.WriteLine("\nPress any key to continue...");
+        //    Console.ReadKey();
+        //}
+        ///// <summary>
+        ///// Load All PhoneBook Data in memory
+        ///// </summary>
+        ///// <param name = "book" ></ param >
+        //public void LoadPhoneBookData(ref Dictionary<string, string> dictionary)
+        //{
+        //    try
+        //    {
+        //        var lines = File.ReadAllLines(@"dictionary.csv");
+        //        foreach (var line in lines)
+        //        {
+        //            var data = line.Split('\t'); // we create array here for work
+        //            var key = data[0].Trim(); 
+        //            var value = string.Join("", data.Skip(1)).Trim();
+        //            dictionary[key] = value;
+        //        }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        Console.Clear();
+        //        Console.WriteLine("Error! Please load dictionary.csv or create NEW" +
+        //            "Before run the Programm." +
+        //            "\nPress any key to close the application...");
+        //        Console.ReadKey();
+        //    }
+
+        //}
+        ///// <summary>
+        ///// Add Number and User to PhoneBook
+        ///// </summary>
+        ///// <param name="book"></param>
+        //public void AddNumberUser(ref Dictionary<string, string> dictionary)
+        //{
+        //    while (true)
+        //    {
+        //        Console.Clear();
+        //        Console.WriteLine("\nPlease enter the Number for new User: " +
+        //            "\nExample (x-xxx-xxx-xx-xx) " +
+        //            "\nWhere x is number....");
+        //        var AddNumber = Console.ReadLine();
+        //        if (AddNumber == string.Empty)
+        //        {
+        //            Console.WriteLine("\nIncorrect format! Please try again. ");
+        //            break;
+        //        }
+        //        while (true)
+        //        {
+        //            Console.Clear();
+        //            Console.WriteLine("\nPlease enter the FullName for new User: " +
+        //            "\nExample (Shatokhin Andrey Sergeevich) ");
+        //            var AddName = Console.ReadLine();
+        //            if (AddName == string.Empty)
+        //            {
+        //                Console.WriteLine("\nIncorrect format! Please try again. ");
+        //                break;
+        //            }
+        //            Console.Clear();
+        //            dictionary.Add(AddNumber, AddName);
+        //            Console.WriteLine($"\nSuccess! New User added to PhoneBook!" +
+        //                $"\nNew User Data is :" +
+        //                $"\nNumber: {AddNumber} and Name: {AddName} ");
+        //            Console.ReadKey();
+        //            break;
+        //        }
+        //        break;
+        //    }
+        //    SavePhoneBookData(ref dictionary);
+        //}
+        ///// <summary>
+        ///// Seach Number and User 
+        ///// </summary>
+        ///// <param name="book"></param>
+        //public void SearchNumberUser(Dictionary<string, string> dictionary)
+        //{
+        //    while (true)
+        //    {
+        //        Console.Clear();
+        //        Console.WriteLine("\nPlease enter the Number for search User: " +
+        //                "\nExample (x-xxx-xxx-xx-xx) " +
+        //                "\nWhere x is number....");
+        //        var key = Console.ReadLine();
+        //        if (dictionary.TryGetValue($"{key}", out var value))
+        //        {
+        //            Console.Clear();
+        //            Console.WriteLine($"Result is: " +
+        //                $"\nNumber: {key} " +
+        //                $"\nUser: {value} ");
+        //            Console.WriteLine("\nPress any key to continue...");
+        //            Console.ReadKey();
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine("\nIncorrect Data! Please try again...");
+        //            Console.WriteLine("\nPress any key to continue...");
+        //            Console.ReadKey();
+        //        }
+        //        break;
+        //    }
+
+        //}
+        ///// <summary>
+        ///// Save Dictionary (PhoneBook) into the file
+        ///// </summary>
+        ///// <param name="dictionary"></param>
+        //public void SavePhoneBookData(ref Dictionary<string, string> dictionary)
+        //{
+        //    using (var streamWriter = new StreamWriter(@"dictionary.csv"))
+        //    {
+        //        foreach (var keyValue in dictionary) 
+        //            streamWriter.WriteLine($"{keyValue.Key}\t{keyValue.Value}");
+        //    }
+        //}
         #endregion
+        //////////////////////////////////////////////////////////////////////
+        // Task 3
 
 
 
