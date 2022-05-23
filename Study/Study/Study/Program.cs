@@ -1,25 +1,35 @@
-﻿namespace Study
+﻿using System.Xml.Serialization;
+
+namespace Study
 {
     class Program
     {
-        private static void HashPrint(ref HashSet<string> Print)
+        /// <summary>
+        /// Serialize method
+        /// </summary>
+        /// <param name="СoncreteWorker"></param>
+        /// <param name="Path"></param>
+        static void SerializeWorker(Worker mainWorker, string Path)
         {
-            foreach (var item in Print)
-            {
-                Console.WriteLine(item);
-            }
-        }
+            // Создаем сериализатор на основе указанного типа 
+            var xmlSerializer = new XmlSerializer(typeof(Worker));
 
+            // Создаем поток для сохранения данных
+            //Stream fStream = new FileStream(Path, FileMode.Create, FileAccess.Write);
+            var fStream = new FileStream(Path, FileMode.Open, FileAccess.Write);
+
+            // Запускаем процесс сериализации
+            //xmlSerializer.Serialize(fStream, СoncreteWorker);
+            xmlSerializer.Serialize(fStream, mainWorker);
+
+            // Закрываем поток
+            //fStream.Close();
+            fStream.Close();
+        }
         static void Main(string[] args)
         {
-            var hash = new HashSet<string>();
-            hash.Add ("1");
-            hash.Add ("Server");
-            hash.Add ("2");
-            hash.Add ("coolOne!");
-
-            HashPrint(ref hash);
-
+            Worker worker = new Worker("Bill", "Gates", "CEO", uint.MaxValue, "Microsoft Corporation");
+            Console.WriteLine(worker.Print());
 
 
         }
