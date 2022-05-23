@@ -10,6 +10,11 @@ namespace Study
     {
         #region Конструкторы
 
+        public Worker()
+        {
+
+        }
+
         /// <summary>
         /// Создание сотрудника
         /// </summary>

@@ -26,13 +26,36 @@ namespace Study
             //fStream.Close();
             fStream.Close();
         }
+
+        static Worker DeserializeWorker(string Path)
+        {
+            Worker? tempWorker = new Worker();
+            // Создаем сериализатор на основе указанного типа 
+            //XmlSerializer xmlSerializer = new XmlSerializer(typeof(Worker));
+            var xmlSerializer = new XmlSerializer(typeof(Worker));
+
+            // Создаем поток для чтения данных
+            Stream fStream = new FileStream(Path, FileMode.Open, FileAccess.Read);
+
+            // Запускаем процесс десериализации
+            tempWorker = xmlSerializer.Deserialize(fStream) as Worker;
+
+            // Закрываем поток
+            fStream.Close();
+
+            // Возвращаем результат
+#pragma warning disable CS8603 // Possible null reference return.
+            return tempWorker;
+#pragma warning restore CS8603 // Possible null reference return.
+        }
         static void Main(string[] args)
         {
             Worker worker = new Worker("Bill", "Gates", "CEO", uint.MaxValue, "Microsoft Corporation");
             Console.WriteLine(worker.Print());
 
             SerializeWorker(worker,"bill.xml");
-
+            worker = DeserializeWorker("bill.xml");
+            Console.WriteLine(worker.Print());
 
         }
         
