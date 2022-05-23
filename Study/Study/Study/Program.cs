@@ -31,6 +31,8 @@ namespace Study
             Worker worker = new Worker("Bill", "Gates", "CEO", uint.MaxValue, "Microsoft Corporation");
             Console.WriteLine(worker.Print());
 
+            SerializeWorker(worker,"bill.xml");
+
 
         }
         
