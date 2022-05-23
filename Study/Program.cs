@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.Linq;
+using System.Xml.Linq;
 
 namespace Study
 {
@@ -104,8 +102,23 @@ namespace Study
             //}
             #endregion
             //////////////////////////////////////////////////////////////////////
+            #region Task 4
+            // Task 4
+            var UserDataFile = new XDocument(new XDeclaration("1.5", "utf-8", "no"),
+                new XElement("UserData",
+                UserData.GetUserData().Select(item => new XElement("FullName",
+                new XAttribute("FullName", item.FullName),
+                new XElement("UserAddress",
+                    new XElement("Street", item.Street),
+                    new XElement("HouseNumber", item.HouseNumber),
+                    new XElement("FlatNumber", item.FlatNumber)),
+                new XElement("UserPhones",
+                    new XElement("MobilePhone", item.MobilePhone),
+                    new XElement("HomePhone", item.HomePhone))))));
 
-            
+            UserDataFile.Save("UserData.xml");
+            #endregion
+            //////////////////////////////////////////////////////////////////////
 
 
 
