@@ -7,11 +7,18 @@ namespace Study
         {
             var a = 3 < 4;
             var b = 5 == 6;
-            Console.WriteLine(a);
-
             var c = b && a;
-            Console.WriteLine(c);
-            Console.WriteLine(!c);
+
+            if (!b)
+            {
+                Console.WriteLine($"{b} is result ");
+
+            }
+            else
+            {
+                Console.WriteLine(c);
+            }
+            
            
         }
         
