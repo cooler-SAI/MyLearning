@@ -10,7 +10,8 @@ namespace Study
             Console.WriteLine(a);
 
             var c = b && a;
-            Console.WriteLine(c);   
+            Console.WriteLine(c);
+            Console.WriteLine(!c);
            
         }
         
