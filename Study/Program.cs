@@ -6,15 +6,13 @@ namespace Study
         static void Main(string[] args)
         {
             int a = 0;
-            while (a <10000)
+            do
             {
                 Console.Write("o_O! yuppi!!! ");
                 a++;
-                if (a == 8000)
-                {
-                    break;
-                }
-            }
+
+            } while (a < 10000);
+            
             Console.WriteLine("\n\nProgram BROKEN!!! ");
             Console.ReadLine();
             
