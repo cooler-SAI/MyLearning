@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="war_worldStoreContainer" CdmEntityContainer="war_worldContainer">
+    <EntitySetMapping Name="creature_abilitiesSet">
+      <EntityTypeMapping TypeName="IsTypeOf(war_world.creature_abilities)">
+        <MappingFragment StoreEntitySet="creature_abilitiesSet">
+          <ScalarProperty Name="AbilityID" ColumnName="AbilityID" />
+          <ScalarProperty Name="RangeCast" ColumnName="RangeCast" />
+          <ScalarProperty Name="TargetCast" ColumnName="TargetCast" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="creature_templateSet">
+      <EntityTypeMapping TypeName="IsTypeOf(war_world.creature_template)">
+        <MappingFragment StoreEntitySet="creature_templateSet">
+          <ScalarProperty Name="Entry" ColumnName="Entry" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

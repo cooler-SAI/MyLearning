@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="war_world.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="war_worldStoreContainer">
+    <EntitySet Name="creature_abilitiesSet" EntityType="war_world.Store.creature_abilitiesSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="creature_templateSet" EntityType="war_world.Store.creature_templateSet" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="creature_abilitiesSet">
+    <Key>
+      <PropertyRef Name="AbilityID" />
+    </Key>
+    <Property Name="AbilityID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RangeCast" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TargetCast" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="creature_templateSet">
+    <Key>
+      <PropertyRef Name="Entry" />
+    </Key>
+    <Property Name="Entry" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Level" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+</Schema>
