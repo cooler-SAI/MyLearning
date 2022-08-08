@@ -1,14 +1,14 @@
-﻿using Telegram.Bot;
-using Telegram.Bot.Extensions.Polling;
-using Telegram.Bot.Types;
-using Telegram.Bot.Types.Enums;
-using Telegram.Bot.Types.InputFiles;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Study
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
         }
     }
